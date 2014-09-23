@@ -77,16 +77,16 @@ input[type="submit"]:active                     { background: #e9e9e9;
 #nav-top li ul li                               { background-color: #222; }
 #nav-main li ul li                              { background-color: #ededed; }
 #main                                           { background-color: #ededed; }
-#banners .banner                                { background-color: #fbfbfb; }
+#banners .banner                                { background-color: #FFFFFF; }
 #bottom input[type="text"],
 #bottom input[type="password"],
 #bottom textarea                                { background-color: #141414; }
 
-section.box                                     { background-color: #fbfbfb; }
-.post                                           { background-color: #fbfbfb; }
+section.box                                     { background-color: #FFFFFF; }
+.post                                           { background-color: #FFFFFF; }
 .post .content table                            { background-color: #b9b9b9; }
 .post .content th                               { background-color: #f0f0f0; }
-.post .content td                               { background-color: #fbfbfb; }
+.post .content td                               { background-color: #FFFFFF; }
 .post .content input[type="text"],
 .post .content input[type="password"],
 .post .content textarea,
@@ -94,7 +94,7 @@ section.box                                     { background-color: #fbfbfb; }
 .post .content .yaselect-select                 { background-color: #f0f0f0; }
 .post .content figure.thick                     { background-color: #f0f0f0; }
 .post .content .tabs > ul > li                  { background-color: #f0f0f0; }
-.post .content .tabs > ul > li.active           { background-color: #fbfbfb; }
+.post .content .tabs > ul > li.active           { background-color: #FFFFFF; }
 .post .content .frame.green                     { background-color: #c4fdb9; }
 .post .content .frame.orange                    { background-color: #ffd987; }
 .post .content .frame.red                       { background-color: #ff4949; }
@@ -102,7 +102,7 @@ section.box                                     { background-color: #fbfbfb; }
 .post .content .frame.gray                      { background-color: #e8e8e8; }
 .post .content .tags a,
 .post .content .tags span                       { background-color: #d4d4d4; }
-.comments .comment                              { background-color: #fbfbfb; }
+.comments .comment                              { background-color: #FFFFFF; }
 button                                          { background: #fff;
                                                   background: -moz-linear-gradient(top, #ffffff, #e9e9e9);
                                                   background: -webkit-linear-gradient(top, #ffffff, #e9e9e9);
@@ -116,7 +116,7 @@ button:active                                   { background: #e9e9e9;
                                                   background: -o-linear-gradient(top, #e9e9e9, #ffffff);
                                                   background: -ms-linear-gradient(top, #e9e9e9, #ffffff);
                                                   background: linear-gradient(top, #e9e9e9, #ffffff); }
-.item                                           { background-color: #fbfbfb; }
+.item                                           { background-color: #FFFFFF; }
 .items .item .image .fancybox .hover            { background-color: #000; }
 .items .item .main .tags a,
 .items .item .main .tags span                   { background-color: #d4d4d4; }
@@ -149,7 +149,7 @@ input[type="submit"]                            { border-color:     #c0c0c0; }
 #footer                                         { border-top-color: #505050; }
 
 section.columns .column                         { border-color:     #8a8a8a; }
-.post.default .featured img                     { border-color:     #cdcdcd; width:200px; }
+.post.default .featured img                     { border-color:     #cdcdcd;}
 .post .content input[type="text"],
 .post .content input[type="password"],
 .post .content textarea,
