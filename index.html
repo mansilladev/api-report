@@ -3,21 +3,6 @@ layout: default
 title: The API Report - Home
 ---
 
-<!-- Four columns -->
-<section class="columns four clear">
-	<ul>
-				
-		{% for post in site.posts limit:4 %}
-			<li class="column">
-				<h1>{{ post.title }}</h1>
-				<p>{{ post.content | strip_html | truncatewords: 100 }} <a href="{{ post.url }}" class="more">More</a></p>
-			</li>		        
-		{% endfor %} 		
-				
-	</ul>
-</section>
-<!-- // Four columns -->
-
 <!-- Content -->
 <section id="content" class="alpha">
 
