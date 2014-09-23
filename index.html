@@ -14,7 +14,7 @@ title: The API Report - Home
 				<div class="featured">
 					<a href="{{ post.url }}"><img src="{{ post.image }}" class="responsive" data-side="both" alt="{{ post.title }}" /></a>
 				</div>
-				<h1 class="title"><a href="post.html" title="Featured article">{{ post.title }}</a></h1>
+				<h1 class="title"><a href="{{ post.url }}" title="Featured article">{{ post.title }}</a></h1>
 				<div class="content">
 					<p>{{ post.content | strip_html | truncatewords: 250 }} <a href="{{ post.url }}" class="more">Read more</a></p>
 				</div>
