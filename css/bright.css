@@ -296,10 +296,12 @@ p{
 
 .sharebuttons{
 	text-align: center;
+	display: inline;
 	
 }
 .sharebuttons li{
 	text-align: center;
 	padding: 5px;
+	list-style: none;
 	
 }
