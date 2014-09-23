@@ -145,7 +145,7 @@
 }
 .widget-social li {
 	font: normal 22px/1 Rokkitt, "Times New Roman";
-	display: block;
+	display: inline;
 	margin-top: 5px;
 	overflow: hidden;
 }
