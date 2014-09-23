@@ -47,7 +47,9 @@ title: The API Report - Home
 		<!-- Default post with image -->
 		<article class="post default">
 			<section class="main clear">
-				<a href="{{ post.url }}"><img src="{{ post.image }}" width="135" alt="{{ post.title }}" /></a>
+				<div class="featured">
+					<a href="{{ post.url }}"><img src="{{ post.image }}" width="135" alt="{{ post.title }}" /></a>
+				</div>
 				<h1 class="title"><a href="{{ post.url }}" title="Featured article">{{ post.title }}</a></h1>
 				<div class="content">
 					<p>{{ post.content | strip_html | truncatewords: 250 }} <a href="{{ post.url }}" class="more">Read more</a></p>

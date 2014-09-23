@@ -149,7 +149,7 @@ input[type="submit"]                            { border-color:     #c0c0c0; }
 #footer                                         { border-top-color: #505050; }
 
 section.columns .column                         { border-color:     #8a8a8a; }
-.post.default .featured img                     { border-color:     #cdcdcd; }
+.post.default .featured img                     { border-color:     #cdcdcd; width:250px; }
 .post .content input[type="text"],
 .post .content input[type="password"],
 .post .content textarea,
