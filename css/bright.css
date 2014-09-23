@@ -288,3 +288,6 @@ button.tiny                                            { color: #fff; }
 .mytitle{
 	font-size: 16px; font-weight: bold; font-color: #000;
 	}
+p{
+	padding: 3px;
+}
