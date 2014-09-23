@@ -53,27 +53,29 @@
 			</ul>
 			
 			<hr />
-		    <div class="row" align="center" style="padding-top: 10px; padding-bottom: 10px;">
-		        <div class="pagination">
-		          <ul>
-		          {% if page.previous %}
-		            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a></li>
-		          {% else %}
-		            <li class="prev disabled"><a>Previous</a></li>
-		          {% endif %}
-		           <li>		    <p align="center">
-		        <a href="http://bit.ly/13esk6Q" target="_blank" title="APIs From 3Scale">
-		            <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="padding-bottom: 15px;" />
-		        </a>        
-		    </p>  </li>
-		          {% if page.next %}
-		            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next</a></li>
-		          {% else %}
-		            <li class="next disabled"><a>Next</a>
-		          {% endif %}
-		          </ul>
-		        </div>
-		    </div>
+		    <table cellpadding="3" cellspacing="2">
+		    	<tr>
+		    		<td width="25%" align="left">
+			          {% if page.previous %}
+			            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a></li>
+			          {% else %}
+			            <li class="prev disabled"><a>Previous</a></li>
+			          {% endif %}
+			       </td>
+			      <td width="50%" align="left">
+				        <a href="http://bit.ly/13esk6Q" target="_blank" title="APIs From 3Scale">
+				            <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="padding-bottom: 15px;" />
+				        </a> 
+				   </td>       
+				   <td width="25%" align="right">
+			          {% if page.next %}
+			            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next</a></li>
+			          {% else %}
+			            <li class="next disabled"><a>Next</a>
+			          {% endif %}
+		          </td>
+		       </tr>
+		    </table>   
 		    
 		    <hr />
 		    <!-- 3scale -->			
