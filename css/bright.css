@@ -292,3 +292,14 @@ button.tiny                                            { color: #fff; }
 p{
 	padding: 4px;
 }
+
+
+.sharebuttons{
+	text-align: center;
+	
+}
+.sharebuttons li{
+	text-align: center;
+	padding: 5px;
+	
+}
