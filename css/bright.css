@@ -284,3 +284,7 @@ button.tiny                                            { color: #fff; }
 	#top h1:hover                                      { color: #f8f8f8; }
 	#search input                                      { color: #f8f8f8; }
 }
+
+.mytitle{
+	font-size: 16px; font-weight: bold; font-color: #000;
+	}
