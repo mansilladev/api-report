@@ -2,41 +2,45 @@
 				
 				<!-- Aside -->
 				<aside id="aside" class="beta">
-					
-	                <!--- Begin Sponsors --->
-	                <div>  
-	                    <script id="parterListingTemplate" type="text/template"> 
-	                        {% raw  %}  
-	                        <a href="{{url}}" target="_blank" title="{{title}}">
-	                        <img src="{{logo}}" width="{{width}}" style="padding-bottom: {{paddingbottom}}px;" />
-	                        </a>   
-	                        {% endraw %}                                                                                                                    
-	                    </script>  
-	                     
-	                    <script type="text/javascript">
-	                    function listSponsors()
-	                        {
-	                        $.getJSON('/data/sponsors.json', function(data) {               
-	                            $.each(data['sponsors'], function(key, val) {                  
-	                            var template = $('#parterListingTemplate').html();
-	                            var html = Mustache.to_html(template, val);
-	                            $('#partnerListingContainer').append(html);
-	                            });         
-	                        });             
-	                    }    
-	                    </script>
-	                    
-						<p class="mytitle">Sponsors</p>
-	                    <div id="partnerListingContainer" align="center"></div>
-	                    
-	                    <script type="text/javascript">
-	                        listSponsors();
-	                    </script>                    
-	                
-	                </div>  
-	                <!--- End Sponsors --->  					
+								
 
 					<ul>
+						<li class="widget widget-sponsors">
+							
+			                <!--- Begin Sponsors --->
+			                <div>  
+			                    <script id="parterListingTemplate" type="text/template"> 
+			                        {% raw  %}  
+			                        <a href="{{url}}" target="_blank" title="{{title}}">
+			                        <img src="{{logo}}" width="{{width}}" style="padding-bottom: {{paddingbottom}}px;" />
+			                        </a>   
+			                        {% endraw %}                                                                                                                    
+			                    </script>  
+			                     
+			                    <script type="text/javascript">
+			                    function listSponsors()
+			                        {
+			                        $.getJSON('/data/sponsors.json', function(data) {               
+			                            $.each(data['sponsors'], function(key, val) {                  
+			                            var template = $('#parterListingTemplate').html();
+			                            var html = Mustache.to_html(template, val);
+			                            $('#partnerListingContainer').append(html);
+			                            });         
+			                        });             
+			                    }    
+			                    </script>
+			                    
+								<p class="mytitle">Sponsors</p>
+			                    <div id="partnerListingContainer" align="center"></div>
+			                    
+			                    <script type="text/javascript">
+			                        listSponsors();
+			                    </script>                    
+			                
+			                </div>  
+			                <!--- End Sponsors --->  
+			                
+						</li>						
 						<li class="widget widget-search">
 							<script>
 							  (function() {
