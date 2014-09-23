@@ -22,32 +22,48 @@
 					<p>This is an example information about the author.<br />Second line is also an option.</p>
 				</div>
 			</section>
-			<ul class="social clear">
-				<li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://themes.kubasto.com/template/website/post.php" data-text="Website - responsive template" data-count="horizontal">Tweet</a></li>
-				<li class="facebook"><div class="fb-like" data-href="http://themes.kubasto.com/template/website/post.php" data-send="false" data-layout="button_count"></div></li>
-				<li class="googleplus"><div class="g-plusone" data-size="medium" data-href="http://themes.kubasto.com/template/website/post.php"></div></li>
-				<li class="pinterest"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fthemes.kubasto.com%2Ftemplate%2Fwebsite%2Fpost.php&media=http%3A%2F%2Fthemes.kubasto.com%2Ftemplate%2Fwebsite%2Fcontent%2Fphoto04.jpg&description=Example%20post" class="pin-it-button" count-layout="horizontal" always-show-count="true"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></li>
-				<li class="inshare"><script class="inshare" type="IN/Share" data-url="http://themes.kubasto.com/template/website/post.php" data-counter="right" data-showzero="true"></script></li>
+			<ul class="social clear" style="padding-left: 50px;">
+				<li class="twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="apievangelist">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</li>
+				<li class="facebook">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=101594059937394&version=v2.0";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+				</li>
+				<li class="googleplus">
+					<script src="//platform.linkedin.com/in.js" type="text/javascript">
+					  lang: en_US
+					</script>
+					<script type="IN/Share" data-counter="right"></script>					
+				</li>
 			</ul>
+			
 			<ul class="meta">
 				<li class="date"><a href="#_">{{ page.date | date:"%m-%d-%Y" }}</a></li>
-				<li class="category"><a href="#_">Category one</a>, <a href="#_">two</a></li>
 				<li class="tags"><a href="#_">tag one</a>, <a href="#_">tag two</a>, <a href="#_">tag</a></li>
 			</ul>
 			
-		    <div class="row" align="center" style="padding-top: 10px; padding-botto: 10px;">
+			<hr />
+		    <div class="row" align="center" style="padding-top: 10px; padding-bottom: 10px;">
 		        <div class="pagination">
 		          <ul>
 		          {% if page.previous %}
-		            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+		            <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a></li>
 		          {% else %}
-		            <li class="prev disabled"><a>&larr; Previous</a></li>
+		            <li class="prev disabled"><a>Previous</a></li>
 		          {% endif %}
 		            
 		          {% if page.next %}
-		            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+		            <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next</a></li>
 		          {% else %}
-		            <li class="next disabled"><a>Next &rarr;</a>
+		            <li class="next disabled"><a>Next</a>
 		          {% endif %}
 		          </ul>
 		        </div>
