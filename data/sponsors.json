@@ -2,9 +2,9 @@
     "sponsors": [
        {
             "title": "3Scale",
-            "tagline": "API Management",
+            "tagline": "API Infrastructure",
             "url": "http://bit.ly/13esk6Q",
-            "logo": "http://kinlane-productions.s3.amazonaws.com/api-service-providers/3scale-logo.jpg",
+            "logo": "https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/3scale-logo-tr.png",
             "width": "200",
              "paddingbottom": "10"
         },                                                           
