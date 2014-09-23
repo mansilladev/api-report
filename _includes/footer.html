@@ -39,6 +39,40 @@
 							</ul>
 						</li>
 					</ul>
+					
+                <!--- Begin Partners --->
+                <div>  
+                 
+                    <script id="parterListingTemplate" type="text/template"> 
+                        {% raw  %}  
+                        <a href="{{url}}" target="_blank" title="{{title}}">
+                        <img src="{{logo}}" width="{{width}}" style="padding-bottom: {{paddingbottom}}px;" />
+                        </a>   
+                        {% endraw %}                                                                                                                    
+                    </script>  
+                     
+                    <script type="text/javascript">
+                    function listSponsors()
+                        {
+                        $.getJSON('/data/sponsors.json', function(data) {               
+                            $.each(data['sponsors'], function(key, val) {                  
+                            var template = $('#parterListingTemplate').html();
+                            var html = Mustache.to_html(template, val);
+                            $('#partnerListingContainer').append(html);
+                            });         
+                        });             
+                    }    
+                    </script>
+                       
+                    <h3>Partner Sites</h3>
+                    <div id="partnerListingContainer" align="center"><br /><br /> </div>
+                    
+                    <script type="text/javascript">
+                        listSponsors();
+                    </script>                    
+                
+                </div>  
+                <!--- End Partners --->  					
 
 				</aside>
 				<!-- // Aside -->
