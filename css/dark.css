@@ -284,3 +284,6 @@ button.tiny                                            { color: #090909; }
 	#top h1:hover                                      { color: #000; }
 	#search input                                      { color: #f8f8f8; }
 }
+
+ol{padding-left: 25px;}
+ul{padding-left: 25px;}
