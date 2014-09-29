@@ -305,3 +305,5 @@ p{
 	list-style: none;
 	display: inline;
 }
+ol{padding-left: 25px;}
+ul{padding-left: 25px;}
