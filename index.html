@@ -12,7 +12,7 @@ title: The API Report
 				<p><a href="{{ post.url }}"><img style="padding: 15px;" src="{{ post.image }}" alt="{{ post.title }}" align="left" width="225" /></a></p>
 				<p class="mytitle"><a href="{{ post.url }}" title="Featured article">{{ post.title }}</a></p>
 				<div class="content">
-					<p>{{ post.content | strip_html | truncatewords: 250 }} <a href="{{ post.url }}" class="more">Read more</a></p>
+					<p>{{ post.content | strip_html | truncatewords: 200 }} <a href="{{ post.url }}" class="more">Read more</a></p>
 				</div>
 			</section>
 			<ul class="meta">
