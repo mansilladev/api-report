@@ -38,6 +38,7 @@ nav ul {
 }
 blockquote, q {
 	quotes: none;
+	font-size: 11px;
 }
 
 blockquote:before, blockquote:after,
