@@ -22,10 +22,48 @@ title: The API Report
 		<!-- // Default post with image -->	
 
 	{% endfor %}
-
-	<!-- Pagination -->
-	<div class="pagination">
-		<a href="#_" class="left">previous posts</a>
-		<a href="#_" class="right">next posts</a>
-	</div>
-	<!-- // Pagination -->
+	
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li>
+          <a href="/" class="left">&laquo;</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="/blog/page{{paginator.previous_page}}" class="left">&laquo;</a>
+        </li>
+      {% endif %}
+    {% else %}
+      <li class="disabled">
+        <a href="#">&laquo;</a>
+      </li>
+    {% endif %}
+    {% if paginator.page == 1 %}
+      <li class="active">
+        <a href="#">1</a>
+      </li>
+    {% else %}
+      <li>
+        <a href="/">1</a>
+      </li>
+    {% endif %}
+    {% for count in (2...10) %}
+      {% if count == paginator.page %}
+        <li class="active">
+          <a href="#">{{count}}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="/blog/page{{count}}">{{count}}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <li>
+        <a href="/blog/page{{paginator.next_page}}" class="right">&raquo;</a>
+      </li>
+    {% else %}
+      <li class="disabled">
+        <a href="#" class="right">&raquo;</a>
+      </li>
+    {% endif %}
